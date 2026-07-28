@@ -3,122 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>Image Slider Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>My Personal Portfolio</h1>
+<div class="slider">
 
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button class="prev">&#10094;</button>
 
-    <!-- Main Content -->
-    <main>
+    <div class="slider-window">
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
+        <div class="slider-track">
 
-            <img src="images/image.png" alt="Profile picture of the student" width="200">
+            <!-- Clone of last image -->
+            <img src="images/image1.webp" alt="Image 3">
 
-            <p>
-                Hello! My name is Ishan Regmi. I am a web development student who enjoys
-                learning HTML, CSS, and JavaScript. I like creating simple and useful
-                websites and improving my programming skills.
-            </p>
-        </section>
+            <!-- Original Images -->
+            <img src="images/image.png" alt="Image 1">
+            <img src="images/OIP.webp" alt="Image 2">
+            <img src="images/image1.webp" alt="Image 3">
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Technical Skills</h2>
+            <!-- Clone of first image -->
+            <img src="images/image.png" alt="Image 1">
 
-            <dl>
-                <dt>HTML5</dt>
-                <dd>Creating web page structure using semantic HTML elements.</dd>
+        </div>
 
-                <dt>CSS3</dt>
-                <dd>Designing responsive and attractive web pages.</dd>
+    </div>
 
-                <dt>JavaScript</dt>
-                <dd>Adding interactive features to websites.</dd>
+    <button class="next">&#10095;</button>
 
-                <dt>GitHub</dt>
-                <dd>Managing and sharing project source code online.</dd>
-            </dl>
-        </section>
+</div>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+<div class="dots"></div>
 
-            <article>
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    A simple project of portfolio website.
-                </p>
-
-                <p>
-                    <a href="https://github.com/IshanRegmi010/IshanRegmi">
-                        View Project Repository
-                    </a>
-                </p>
-            </article>
-
-            <article>
-                <h3>Bank Management System</h3>
-
-                <p>
-                    A basic website showing bank management system.
-                </p>
-
-            </article>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-            <form action="#" method="post">
-
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </p>
-
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="30"></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Submit</button>
-                </p>
-
-            </form>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Ishan Regmi. All Rights Reserved.</p>
-    </footer>
+<script src="slider.js"></script>
 
 </body>
 </html>
